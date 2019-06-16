@@ -25,12 +25,9 @@ function getData() {
     url: API_ENDPOINT_URI,
     cache: false,
     success: function(data) {
-      const tBody = $("#todos");
-
+      const tBody = $("#todos");g
       $(tBody).empty();
-
       getCount(data.length);
-
       $.each(data, function(key, item) {
         const tr = $("<tr></tr>")
           .append(
